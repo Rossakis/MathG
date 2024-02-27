@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "MathG",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -38,8 +40,15 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "MainExecutable::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MainExecutable-Debug-63147c1f32036eb94394.json",
+					"name" : "MainExecutable",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "MathG::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MathG-Debug-0f1d0bea9f7211b33399.json",
+					"jsonFile" : "target-MathG-Debug-8118cd169fb2c49c8906.json",
 					"name" : "MathG",
 					"projectIndex" : 0
 				}
