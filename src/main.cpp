@@ -3,10 +3,11 @@
 using namespace mathg;
 
 int main() {
-    float degree {90};
-    float radians = DegreeToRad(degree);
 
-    std::cout << degree << "degrees is " << radians << "radians" << std::endl;
+    Vector2 a = Vector2(20, 14);
+    std::cout << "Vector magnitude is " << a.magnitude << std::endl;
+
+
 
     return 0;
 }

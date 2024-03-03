@@ -22,20 +22,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed6d639e-f427-4c25-b68c-a19fed678d43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/include/mathg.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mathg.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit_tests/mathTest.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-3d78660cd7c6cbf0510c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-792a5f53697c27896514.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-02-18T23-08-08-0400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-MathG-Debug-0f1d0bea9f7211b33399.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-d4eb2fdb9de93536c1d2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-a7a94522928c8ba5c6c7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-8461fc9a48a069efb5d5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-02-22T20-49-05-0049.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-MainExecutable-Debug-63147c1f32036eb94394.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-MathG-Debug-8118cd169fb2c49c8906.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/MainExecutable" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/MainExecutable" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libMathG.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libMathG.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libMathG.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libMathG.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/mathg.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/mathg.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +53,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitLabMergeRequestsSettings">{}</component>
+  <component name="GithubPullRequestsUISettings">{}</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/include/mathg.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/include/mathg.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/mathg.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectApplicationVersion">
@@ -82,8 +87,10 @@
     &quot;git-widget-placeholder&quot;: &quot;Giorgos-Dev&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/giorgos_tsolakidis/Documents/GitHub/MathG&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;,
@@ -97,6 +104,11 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.MainExecutable">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainExecutable" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MathG" TARGET_NAME="MainExecutable" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MathG" RUN_TARGET_NAME="MainExecutable">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -125,7 +137,11 @@
       <workItem from="1708297591855" duration="58000" />
       <workItem from="1708297676281" duration="545000" />
       <workItem from="1708628574766" duration="5244000" />
-      <workItem from="1709044552548" duration="7373000" />
+      <workItem from="1709044552548" duration="8490000" />
+      <workItem from="1709495849226" duration="4000" />
+      <workItem from="1709496506635" duration="117000" />
+      <workItem from="1709496636255" duration="120000" />
+      <workItem from="1709506465704" duration="2756000" />
     </task>
     <servers />
   </component>
