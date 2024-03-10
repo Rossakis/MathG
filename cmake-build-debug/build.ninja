@@ -51,14 +51,14 @@ build cmake_object_order_depends_target_MathG: phony || CMakeFiles/MathG.dir
 
 build CMakeFiles/MathG.dir/src/mathg.cpp.o: CXX_COMPILER__MathG_unscanned_Debug /Users/giorgos_tsolakidis/Documents/GitHub/MathG/src/mathg.cpp || cmake_object_order_depends_target_MathG
   DEP_FILE = CMakeFiles/MathG.dir/src/mathg.cpp.o.d
-  FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics
   INCLUDES = -I/Users/giorgos_tsolakidis/Documents/GitHub/MathG/include
   OBJECT_DIR = CMakeFiles/MathG.dir
   OBJECT_FILE_DIR = CMakeFiles/MathG.dir/src
 
 build CMakeFiles/MathG.dir/src/main.cpp.o: CXX_COMPILER__MathG_unscanned_Debug /Users/giorgos_tsolakidis/Documents/GitHub/MathG/src/main.cpp || cmake_object_order_depends_target_MathG
   DEP_FILE = CMakeFiles/MathG.dir/src/main.cpp.o.d
-  FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics
   INCLUDES = -I/Users/giorgos_tsolakidis/Documents/GitHub/MathG/include
   OBJECT_DIR = CMakeFiles/MathG.dir
   OBJECT_FILE_DIR = CMakeFiles/MathG.dir/src
@@ -72,7 +72,7 @@ build CMakeFiles/MathG.dir/src/main.cpp.o: CXX_COMPILER__MathG_unscanned_Debug /
 # Link the static library libMathG.a
 
 build libMathG.a: CXX_STATIC_LIBRARY_LINKER__MathG_Debug CMakeFiles/MathG.dir/src/mathg.cpp.o CMakeFiles/MathG.dir/src/main.cpp.o
-  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1
+  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/MathG.dir
   POST_BUILD = :
@@ -91,7 +91,7 @@ build cmake_object_order_depends_target_MainExecutable: phony || cmake_object_or
 
 build CMakeFiles/MainExecutable.dir/src/main.cpp.o: CXX_COMPILER__MainExecutable_unscanned_Debug /Users/giorgos_tsolakidis/Documents/GitHub/MathG/src/main.cpp || cmake_object_order_depends_target_MainExecutable
   DEP_FILE = CMakeFiles/MainExecutable.dir/src/main.cpp.o.d
-  FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics
   INCLUDES = -I/Users/giorgos_tsolakidis/Documents/GitHub/MathG/include
   OBJECT_DIR = CMakeFiles/MainExecutable.dir
   OBJECT_FILE_DIR = CMakeFiles/MainExecutable.dir/src
@@ -105,7 +105,7 @@ build CMakeFiles/MainExecutable.dir/src/main.cpp.o: CXX_COMPILER__MainExecutable
 # Link the executable MainExecutable
 
 build MainExecutable: CXX_EXECUTABLE_LINKER__MainExecutable_Debug CMakeFiles/MainExecutable.dir/src/main.cpp.o | libMathG.a || libMathG.a
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1
   LINK_LIBRARIES = libMathG.a
   OBJECT_DIR = CMakeFiles/MainExecutable.dir
   POST_BUILD = :

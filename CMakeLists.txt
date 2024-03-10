@@ -10,7 +10,6 @@ include_directories(include)
 set(SOURCES
         src/mathg.cpp
         src/main.cpp
-        unit_tests/mathTest.h
 )
 
 # Create MathG library
