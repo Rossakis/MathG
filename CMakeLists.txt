@@ -8,7 +8,6 @@ include_directories(include)
 
 # Add source files
 set(SOURCES
-        src/mathg.cpp
         src/main.cpp
 )
 

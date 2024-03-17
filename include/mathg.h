@@ -11,7 +11,6 @@
 #include <iomanip>
 
 ///TODO: Matrix struct
-/// Vector zero
 namespace  mathg {
     constexpr float PI = 3.14159265358979323846f;
 
@@ -25,11 +24,11 @@ namespace  mathg {
     }
 
     inline float Cos(const float angleInRadians) {
-        return std::cosf(angleInRadians);
+        return std::cos(angleInRadians);
     }
 
     inline float Sin(const float angleInRadians) {
-        return std::sinf(angleInRadians);
+        return std::sin(angleInRadians);
     }
 
     inline float Ταn(const float angleInRadians) {
@@ -37,14 +36,14 @@ namespace  mathg {
     }
 
     inline float Cotan(const float angleInRadians) {
-        if (std::sinf(angleInRadians) == 0)
+        if (std::sin(angleInRadians) == 0)
             std::cerr << "Cannot determine Cotan. Reason: Sine = 0" << std::endl;
 
-        return std::cosf(angleInRadians)/std::sinf(angleInRadians);
+        return std::cos(angleInRadians)/std::sin(angleInRadians);
     }
 
     inline float Arccos(const float angleInRadians) {
-        return std::acosf(angleInRadians);
+        return std::acos(angleInRadians);
     }
 
     struct Vector2 {
@@ -70,7 +69,7 @@ namespace  mathg {
                 std::cout << "Trying to find angle between two Vector2, when one of them is Vector2.zero" << std::endl;
                 return 0.0f;
             }
-            return std::acosf(Dot(vec1, vec2) / (vec1.magnitude * vec2.magnitude));
+            return std::acos(Dot(vec1, vec2) / (vec1.magnitude * vec2.magnitude));
         }
 
         inline Vector2& operator = (const Vector2& vec2) {
@@ -120,7 +119,7 @@ namespace  mathg {
         }
 
         ///By default, shows the maximum amount of digits for each float number of this vector
-        inline std::string ToString(int precisionNumber) const {
+        [[nodiscard]] inline std::string ToString(int precisionNumber) const {
             std::stringstream ss;
             ss << std::fixed << std::setprecision(precisionNumber) << "(" << this->x << ", " << this->y << ")";;
             return ss.str();
@@ -140,7 +139,10 @@ namespace  mathg {
         }
 
         static inline float Distance(const Vector3 &vec1, const Vector3 &vec2) {
-            return std::sqrt(std::pow(vec2.x - vec1.x, 2) + std::pow(vec2.y - vec1.y, 2) + std::pow(vec2.z - vec1.z, 2));
+            return static_cast<float>(std::sqrt
+                (std::pow(vec2.x - vec1.x, 2) +
+                    std::pow(vec2.y - vec1.y, 2) +
+                    std::pow(vec2.z - vec1.z, 2)));
         }
 
         static inline float Dot(const Vector3 &vec1, const Vector3 &vec2) {
@@ -156,7 +158,7 @@ namespace  mathg {
                 std::cout << "Trying to find angle between two Vector3, when one of them is Vector3.zero" << std::endl;
                 return 0.0f;
             }
-            return std::acosf(Dot(vec1, vec2) / (vec1.magnitude * vec2.magnitude));
+            return std::acos(Dot(vec1, vec2) / (vec1.magnitude * vec2.magnitude));
         }
 
         inline Vector3& operator = (const Vector3 &vec3) {
@@ -177,7 +179,7 @@ namespace  mathg {
             return Vector3(this->x + vec3.x, this->y + vec3.y, this->z + vec3.z);
         }
 
-        inline Vector3 operator * (int scalar) const {
+        inline Vector3 operator * (float scalar) const {
             return Vector3(this->x * scalar, this->y * scalar, this->z * scalar);
         }
 
