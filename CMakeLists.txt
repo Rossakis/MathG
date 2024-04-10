@@ -9,12 +9,14 @@ include_directories(include)
 # Add source files
 set(SOURCES
         src/main.cpp
+        include/matrix.h
+        include/vector.h
 )
 
 # Create MathG library
 add_library(MathG ${SOURCES})
 
 # Link MathG library with the main executable
-add_executable(MainExecutable src/main.cpp)
+add_executable(main src/main.cpp)
 
-target_link_libraries(MainExecutable MathG)
+target_link_libraries(main MathG)

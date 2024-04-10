@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "MainExecutable.exe"
+			"path" : "main.exe"
 		},
 		{
-			"path" : "MainExecutable.pdb"
+			"path" : "main.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -29,13 +29,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 18,
+				"line" : 20,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 20,
+				"line" : 22,
 				"parent" : 0
 			},
 			{
@@ -59,7 +59,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/GiorgosDev/OneDrive/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/GitHub/MathG/include"
+					"path" : "C:/Users/GiorgosDev/Documents/GitHub/MathG/include"
 				}
 			],
 			"language" : "CXX",
@@ -84,7 +84,7 @@
 			"id" : "MathG::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "MainExecutable::@6890427a1f51a3e7e1df",
+	"id" : "main::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -109,8 +109,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "MainExecutable",
-	"nameOnDisk" : "MainExecutable.exe",
+	"name" : "main",
+	"nameOnDisk" : "main.exe",
 	"paths" : 
 	{
 		"build" : ".",
