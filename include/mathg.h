@@ -9,9 +9,11 @@
 #include <sstream>
 #include <string>
 #include <iomanip>
+#include <stdexcept>
 
 //Reference to the custom header files
 #include <vector.h>
+
 #include <matrix.h>
 
 namespace  mathg {
@@ -47,6 +49,6 @@ namespace  mathg {
     inline float Arccos(const float angleInRadians) {
         return std::acos(angleInRadians);
     }
-};
+}
 
 #endif //MATHG_H

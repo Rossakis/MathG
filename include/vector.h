@@ -42,12 +42,12 @@ namespace  mathg {
             return *this; // Return a reference to the current object
         }
 
-        Vector2 operator + (const Vector2 &vec3) const {
-            return Vector2(this->x + vec3.x, this->y + vec3.y);
+        Vector2 operator + (const Vector2 &vec2) const {
+            return Vector2(this->x + vec2.x, this->y + vec2.y);
         }
 
-        Vector2 operator - (const Vector2 &vec3) const {
-            return Vector2(this->x + vec3.x, this->y + vec3.y);
+        Vector2 operator - (const Vector2 &vec2) const {
+            return Vector2(this->x + vec2.x, this->y + vec2.y);
         }
 
         Vector2 operator * (const float scalar) const {
@@ -80,7 +80,7 @@ namespace  mathg {
         }
 
         ///By default, shows the maximum amount of digits for each float number of this vector
-        [[nodiscard]] std::string ToString(const int precisionNumber) const {
+        [[nodiscard]] std::string ToString(const int precisionNumber = 7) const {
             std::stringstream ss;
             ss << std::fixed << std::setprecision(precisionNumber) << "(" << this->x << ", " << this->y << ")";;
             return ss.str();
