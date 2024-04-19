@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/GiorgosDev/Documents/GitHub/MathG/cmake-build-debug/
+cmake_ninja_workdir = /Users/giorgos_tsolakidis/Documents/GitHub/MathG/cmake-build-debug/
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target MathG
 
@@ -49,12 +49,12 @@ cmake_ninja_workdir = C$:/Users/GiorgosDev/Documents/GitHub/MathG/cmake-build-de
 
 build cmake_object_order_depends_target_MathG: phony || CMakeFiles/MathG.dir
 
-build CMakeFiles/MathG.dir/src/main.cpp.obj: CXX_COMPILER__MathG_unscanned_Debug C$:/Users/GiorgosDev/Documents/GitHub/MathG/src/main.cpp || cmake_object_order_depends_target_MathG
-  DEP_FILE = CMakeFiles\MathG.dir\src\main.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/GiorgosDev/Documents/GitHub/MathG/include
-  OBJECT_DIR = CMakeFiles\MathG.dir
-  OBJECT_FILE_DIR = CMakeFiles\MathG.dir\src
+build CMakeFiles/MathG.dir/src/main.cpp.o: CXX_COMPILER__MathG_unscanned_Debug /Users/giorgos_tsolakidis/Documents/GitHub/MathG/src/main.cpp || cmake_object_order_depends_target_MathG
+  DEP_FILE = CMakeFiles/MathG.dir/src/main.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics
+  INCLUDES = -I/Users/giorgos_tsolakidis/Documents/GitHub/MathG/include
+  OBJECT_DIR = CMakeFiles/MathG.dir
+  OBJECT_FILE_DIR = CMakeFiles/MathG.dir/src
 
 
 # =============================================================================
@@ -64,11 +64,12 @@ build CMakeFiles/MathG.dir/src/main.cpp.obj: CXX_COMPILER__MathG_unscanned_Debug
 #############################################
 # Link the static library libMathG.a
 
-build libMathG.a: CXX_STATIC_LIBRARY_LINKER__MathG_Debug CMakeFiles/MathG.dir/src/main.cpp.obj
+build libMathG.a: CXX_STATIC_LIBRARY_LINKER__MathG_Debug CMakeFiles/MathG.dir/src/main.cpp.o
+  ARCH_FLAGS = -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles\MathG.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
+  OBJECT_DIR = CMakeFiles/MathG.dir
+  POST_BUILD = :
+  PRE_LINK = :
   TARGET_FILE = libMathG.a
   TARGET_PDB = MathG.a.dbg
 
@@ -81,12 +82,12 @@ build libMathG.a: CXX_STATIC_LIBRARY_LINKER__MathG_Debug CMakeFiles/MathG.dir/sr
 
 build cmake_object_order_depends_target_main: phony || cmake_object_order_depends_target_MathG
 
-build CMakeFiles/main.dir/src/main.cpp.obj: CXX_COMPILER__main_unscanned_Debug C$:/Users/GiorgosDev/Documents/GitHub/MathG/src/main.cpp || cmake_object_order_depends_target_main
-  DEP_FILE = CMakeFiles\main.dir\src\main.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/GiorgosDev/Documents/GitHub/MathG/include
-  OBJECT_DIR = CMakeFiles\main.dir
-  OBJECT_FILE_DIR = CMakeFiles\main.dir\src
+build CMakeFiles/main.dir/src/main.cpp.o: CXX_COMPILER__main_unscanned_Debug /Users/giorgos_tsolakidis/Documents/GitHub/MathG/src/main.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles/main.dir/src/main.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics
+  INCLUDES = -I/Users/giorgos_tsolakidis/Documents/GitHub/MathG/include
+  OBJECT_DIR = CMakeFiles/main.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.dir/src
 
 
 # =============================================================================
@@ -94,24 +95,23 @@ build CMakeFiles/main.dir/src/main.cpp.obj: CXX_COMPILER__main_unscanned_Debug C
 
 
 #############################################
-# Link the executable main.exe
+# Link the executable main
 
-build main.exe: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/src/main.cpp.obj | libMathG.a || libMathG.a
-  FLAGS = -g
-  LINK_LIBRARIES = libMathG.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\main.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = main.exe
-  TARGET_IMPLIB = libmain.dll.a
-  TARGET_PDB = main.exe.dbg
+build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/src/main.cpp.o | libMathG.a || libMathG.a
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.1
+  LINK_LIBRARIES = libMathG.a
+  OBJECT_DIR = CMakeFiles/main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = main
+  TARGET_PDB = main.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\GiorgosDev\Documents\GitHub\MathG\cmake-build-debug && C:\Users\GiorgosDev\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = cd /Users/giorgos_tsolakidis/Documents/GitHub/MathG/cmake-build-debug && /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -122,7 +122,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\GiorgosDev\Documents\GitHub\MathG\cmake-build-debug && C:\Users\GiorgosDev\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Users\GiorgosDev\Documents\GitHub\MathG -BC:\Users\GiorgosDev\Documents\GitHub\MathG\cmake-build-debug"
+  COMMAND = cd /Users/giorgos_tsolakidis/Documents/GitHub/MathG/cmake-build-debug && /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake --regenerate-during-build -S/Users/giorgos_tsolakidis/Documents/GitHub/MathG -B/Users/giorgos_tsolakidis/Documents/GitHub/MathG/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -134,17 +134,15 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build MathG: phony libMathG.a
 
-build main: phony main.exe
-
 # =============================================================================
 # Folder targets.
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/GiorgosDev/Documents/GitHub/MathG/cmake-build-debug
+# Folder: /Users/giorgos_tsolakidis/Documents/GitHub/MathG/cmake-build-debug
 
-build all: phony libMathG.a main.exe
+build all: phony libMathG.a main
 
 # =============================================================================
 # Built-in targets
@@ -153,14 +151,14 @@ build all: phony libMathG.a main.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/GiorgosDev/Documents/GitHub/MathG/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Compiler/AppleClang-C.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Compiler/AppleClang-CXX.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Compiler/Clang.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Platform/Apple-AppleClang-C.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Platform/Apple-Clang-C.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Platform/Apple-Clang-CXX.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Platform/Apple-Clang.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Platform/Darwin-Initialize.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Platform/Darwin.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Platform/UnixPaths.cmake /Users/giorgos_tsolakidis/Documents/GitHub/MathG/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Users/GiorgosDev/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/GiorgosDev/Documents/GitHub/MathG/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
+build /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Compiler/AppleClang-C.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Compiler/AppleClang-CXX.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Compiler/Clang.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Platform/Apple-AppleClang-C.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Platform/Apple-Clang-C.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Platform/Apple-Clang-CXX.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Platform/Apple-Clang.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Platform/Darwin-Initialize.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Platform/Darwin.cmake /Users/giorgos_tsolakidis/Applications/CLion.app/Contents/bin/cmake/mac/x64/share/cmake-3.28/Modules/Platform/UnixPaths.cmake /Users/giorgos_tsolakidis/Documents/GitHub/MathG/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
 
 
 #############################################

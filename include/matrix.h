@@ -8,13 +8,11 @@
 
 namespace mathg{
     struct Matrix2x2 {
-    private:
         float m11;
         float m12;
         float m21;
         float m22;
 
-    public:
         ///Identity matrix
         static const Matrix2x2 I2;
 
@@ -23,7 +21,6 @@ namespace mathg{
         explicit Matrix2x2(const float m1, const float m2, const float m3, const float m4) : m11(m1), m12(m2), m21(m3), m22(m4) {
         }
 
-        //TODO: Overloaded Operators (*)
         Matrix2x2& operator = (const Matrix2x2 matrix) {
             if(this != &matrix) {
                 this->m11 = matrix.m11;
@@ -48,6 +45,7 @@ namespace mathg{
                 this-> m22 - matrix.m22);
         }
 
+        //For more modular access to the field members
         float& operator[](const int index) {
             switch (index) {
                 case 1:
@@ -61,26 +59,23 @@ namespace mathg{
                 default:
                     //When passing wrong indices
                     throw InvalidParametersException("Nonexistent matrix coordinates passed as parameters!");
-                    break;
             }
         }
 
         Matrix2x2 operator * (const Matrix2x2 &matrix) const {
-            Matrix2x2 matrix2 = Matrix2x2(0);
+            return Matrix2x2((this->m11 * matrix.m11) + (this->m12 * matrix.m21),
+                             (this->m11 * matrix.m12) + (this->m12 * matrix.m22),
+                             (this->m21 * matrix.m11) + (this->m22 * matrix.m21),
+                             (this->m21 * matrix.m12) + (this->m22 * matrix.m22));
+        }
 
-            /*for (int i= 0; i < 2; i++) {
-                C[i, j] = A[i, 1] * B[1, j] + A[i, 2] * B[2, j]  // Dot product of row i in A and column j in B
-            }*/
-
-            return Matrix2x2(this->m11 - matrix.m11,
-                this-> m12 - matrix.m12,
-                this-> m21 - matrix.m21,
-                this-> m22 - matrix.m22);
+        ///Returns a transposed instance of this matrix.
+        [[nodiscard]] Matrix2x2 Transpose() const{
+            return Matrix2x2(this->m11, this->m21, this->m12, this->m22);
         }
 
         //TODO:
         /*
-        Transpose(): Returns a new matrix with rows and columns swapped.
         Determinant(): Calculates the determinant of the matrix.
         Inverse(): Returns a new matrix that is the inverse of the current matrix (if it exists).
         Utility functions for specific operations you might need, like rotation or scaling transformations (depending on your library's focus).

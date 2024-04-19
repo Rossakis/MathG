@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.28"
@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MathG::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MathG-Debug-b84462e30e2eac433575.json",
+					"jsonFile" : "target-MathG-Debug-09a486120083271b96b6.json",
 					"name" : "MathG",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "main::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main-Debug-40a87852b00ee5131efd.json",
+					"jsonFile" : "target-main-Debug-662146f2e78e69328beb.json",
 					"name" : "main",
 					"projectIndex" : 0
 				}
@@ -58,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/GiorgosDev/Documents/GitHub/MathG/cmake-build-debug",
-		"source" : "C:/Users/GiorgosDev/Documents/GitHub/MathG"
+		"build" : "/Users/giorgos_tsolakidis/Documents/GitHub/MathG/cmake-build-debug",
+		"source" : "/Users/giorgos_tsolakidis/Documents/GitHub/MathG"
 	},
 	"version" : 
 	{
