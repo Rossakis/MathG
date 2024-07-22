@@ -9,4 +9,23 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
+
+# Ignore the cmake-build-debug directory
 cmake-build-debug/
+
+# Ignore other build directories
+build/
+out/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore compiled binaries
+*.exe
+*.o
+*.so
+*.dll
