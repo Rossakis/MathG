@@ -4,9 +4,9 @@
 
 #ifndef MATRICES_H
 #define MATRICES_H
-#include <mathg.h>
+#include <MathG.h>
 
-namespace mathg{
+namespace MathG{
     struct Matrix2x2 {
         float m11;
         float m12;
@@ -68,6 +68,8 @@ namespace mathg{
                              (this->m21 * matrix.m11) + (this->m22 * matrix.m21),
                              (this->m21 * matrix.m12) + (this->m22 * matrix.m22));
         }
+
+        //TODO: add operator * matrix2x2 with vector2
 
         ///Returns a transposed instance of this matrix.
         [[nodiscard]] Matrix2x2 Transpose() const{

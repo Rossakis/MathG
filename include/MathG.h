@@ -12,11 +12,11 @@
 #include <stdexcept>
 
 //Reference to the custom header files
-#include <vector.h>
+#include <Vector.h>
 
-#include <matrix.h>
+#include <Matrix.h>
 
-namespace  mathg {
+namespace  MathG {
     constexpr float PI = 3.14159265358979323846f;
 
     inline float DegreeToRad(const float angle) {

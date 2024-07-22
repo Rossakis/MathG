@@ -1,6 +1,6 @@
 #include <iostream>
-#include "../include/mathg.h"
-using namespace mathg;
+#include "../include/MathG.h"
+using namespace MathG;
 
 int main() {
 

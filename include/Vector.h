@@ -4,9 +4,9 @@
 
 #ifndef VECTOR_H
 #define VECTOR_H
-#include <mathg.h>
+#include <MathG.h>
 
-namespace  mathg {
+namespace  MathG {
     struct Vector2 {
         float x;
         float y;
