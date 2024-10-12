@@ -13,7 +13,6 @@
 
 //Reference to the custom header files
 #include <Vector.h>
-
 #include <Matrix.h>
 
 namespace  MathG {
