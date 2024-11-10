@@ -9,8 +9,6 @@ include_directories(include)
 # Add source files
 set(SOURCES
         src/main.cpp
-        include/Matrix.h
-        include/Vector.h
 )
 
 # Create MathG library

@@ -25,9 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed6d639e-f427-4c25-b68c-a19fed678d43" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/MathG.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/MathG.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Matrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Matrix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Vector.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Vector.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +165,8 @@
       <workItem from="1721727681951" duration="1605000" />
       <workItem from="1728741610660" duration="176000" />
       <workItem from="1728741989059" duration="926000" />
-      <workItem from="1728763151427" duration="6000" />
+      <workItem from="1728763151427" duration="1250000" />
+      <workItem from="1731265975295" duration="101000" />
     </task>
     <servers />
   </component>
